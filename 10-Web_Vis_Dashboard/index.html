@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherPy Scatter Plots</title>
+
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="resources/css/styles.css" media="screen">
+
+
+
+</head>
+<body>
+        <!-- Start of navbar -->
+        <nav class="navbar navbar-default">
+                <div class="container-fluid navbar-custom">
+          
+                  <!-- toggle for better mobile display -->
+                  <div class="row">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <div class="col-xs-9 phone-nav">
+                        <a class="navbar-brand" href="#" id="logo">weatherPy</a>
+                      </div>
+                    </div>
+          
+                    <!-- Navigation links, forms, and content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                           <li><a href="visuals/temperature.html">Temperature</a></li>
+                            <li><a href="visuals/humidity.html">Humidity</a></li>
+                            <li><a href="visuals/clouds.html">Cloudiness</a></li>
+                            <li><a href="visuals/wind.html">Wind Speed</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="comparison.html">Comparison</a></li>
+                        <li><a href="data.html">Data</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div>
+                </div><!-- /.container-fluid -->
+              </nav>
+              <!-- End of navbar -->
+          
+              <!-- Start of container -->
+              <div class="container">
+                <section class="row">
+                  <div class="col-md-8">
+                    <article class="description-content">
+                      <h1 class="description-header">Latitude ~ [Temperature, Humidity, Clouds, Wind Speed]</h1>
+                      <hr class="description-hr"/>
+                      <img src="resources/images/latitudeVtemperature.png" alt="" id="description-image"/>
+                     <p> Does proximity to the equator affect the weather? First data was pulled from the OpenWeatherMap API to assemble a random dataset on over 500 cities.</p>
+                      <p> Next Matplotlib was used to plot aspects of the weather. Factors included: temperature, cloudiness, wind speed, and humidity.</p>
+                    </article>
+                  </div>
+                  <div class="col-md-4">
+          
+                    <!-- begin visual -->
+                    <section id="imageNav-area">
+                      <div class="imageNav-content">
+                        <h2 class="imageNav-header">Scatter Plots</h2>
+                        <hr />
+                        <div id="images">
+                          <a href="visuals/temperature.html"><img src="resources/images/latitudeVtemperature.png" alt="Latitude V. Temperature" class="imageNav-photo"></a>
+                          <a href="visuals/humidity.html"><img src="resources/images/latitudeVhumidity.png" alt="Latitude V Humidity" class="imageNav-photo"></a>
+                          <a href="visuals/clouds.html"><img src="resources/images/latitudeVclouds.png" alt="Latitude V Cloudiness" class="imageNav-photo"></a>
+                          <a href="visuals/wind.html"><img src="resources/images/latitudeVwind.png" alt="Latitude V Wind Speed" class="imageNav-photo"></a>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- end visual -->
+          
+                  </div>
+                </section>
+              </div>
+              <!-- end container -->
+          
+              <!-- start footer -->
+              <footer class="footer navbar-fixed-bottom">
+                <div class="two-toned-footer-color"></div>
+                <p class="text-muted text-muted-footer text-center">
+                  &copy; WeatherPy Project
+                </p>
+              </footer>
+              <!-- end footer -->
+          
+              <!-- jQuery CDN -->
+              <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+          
+              <!-- Bootstrap CDN -->
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+          
+</body>
+</html>
